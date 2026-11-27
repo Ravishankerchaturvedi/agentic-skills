@@ -43,7 +43,7 @@ volume Cartesia is the honest cheap path.
 ## Productization note (separate setup from running cost)
 - One-time **setup fee** (your labour) ≠ ongoing **running cost** (telephony+voice+LLM,
   client pays). State this explicitly or you go underwater when the client scales: a
-  modest 1,000–2,000 calls/mo = $75–$240/mo (₹6k–20k) in raw usage alone.
+  modest 1,000–2,000 calls/mo = $75–$240/mo in raw usage alone.
 - Capture **recurring revenue** (monthly platform/maintenance fee), not just a one-time
   build + tiny AMC. A voice agent delivers value every month; price it monthly.
 

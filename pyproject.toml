@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-skills"
+version = "0.2.0"
+description = "Ten field-tested, tool-agnostic skills for building and shipping real agentic apps, plus a checker that validates every SKILL.md in a skill library."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Ravi Shanker Chaturvedi" }]
+keywords = ["agent-skills", "agentic-ai", "ai-agents", "agents", "claude-code", "cursor", "codex", "prompt-engineering", "llm", "developer-tools", "ai-coding", "skills", "release-engineering", "checklist", "cli"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Documentation",
+  "Topic :: Software Development :: Quality Assurance",
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Ravishankerchaturvedi/agentic-skills"
+Issues = "https://github.com/Ravishankerchaturvedi/agentic-skills/issues"
+Changelog = "https://github.com/Ravishankerchaturvedi/agentic-skills/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+agentic-skills = "agentic_skills.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agentic_skills*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
